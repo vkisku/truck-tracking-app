@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity{
               switch (detectionMode) {
                 case ODT_LIVE:
                     Snackbar.make(getWindow().getDecorView(), "Truck Registration", Snackbar.LENGTH_LONG).show();
-                  //activity.startActivity(new Intent(activity, LiveObjectDetectionActivity.class));
+                  activity.startActivity(new Intent(activity, TruckRegistration.class));
                   break;
                 case ODT_STATIC:
                     Snackbar.make(getWindow().getDecorView(), "Truck Loading", Snackbar.LENGTH_LONG).show();

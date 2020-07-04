@@ -84,4 +84,5 @@
   <string name="truck_unloading">Unloading</string>
     <string name="truck_no_hint">Truck Number</string>
   <string name="truck_driver_name_hint">Truck Driver Name</string>
+    <string name="truck_register_text">Register</string>
 </resources>

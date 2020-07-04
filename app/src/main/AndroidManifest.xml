@@ -64,6 +64,11 @@
         android:exported="false"
         android:screenOrientation="portrait">
     </activity>
+    <activity
+        android:name="com.vikash.truck.tracking.TruckRegistration"
+        android:exported="false"
+        android:screenOrientation="portrait">
+    </activity>
   </application>
 
 </manifest>

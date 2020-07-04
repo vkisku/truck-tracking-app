@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  <com.google.android.material.textfield.TextInputLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/truck_no_hint">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/truck_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/truck_driver_name_hint">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/truck_driver_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+  </com.google.android.material.textfield.TextInputLayout>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/truck_register_btn"
+        style="@style/Widget.Shrine.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/truck_register_text" />
+  </RelativeLayout>
+</LinearLayout>
