@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appNs="http://schemas.android.com/tools"
     android:orientation="vertical">
   <com.google.android.material.textfield.TextInputLayout
 
@@ -29,19 +31,7 @@
         />
 
   </com.google.android.material.textfield.TextInputLayout>
-  <com.google.android.material.textfield.TextInputLayout
 
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:hint="@string/truck_empty_weight_hint">
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/truck_empty_weight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
-
-  </com.google.android.material.textfield.TextInputLayout>
   <com.google.android.material.textfield.TextInputLayout
 
       android:layout_width="match_parent"
@@ -52,6 +42,23 @@
         android:id="@+id/truck_laden_weight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+
+        />
+
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/truck_empty_weight_hint">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/truck_empty_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+
         />
 
   </com.google.android.material.textfield.TextInputLayout>
@@ -67,6 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:focusable="false"
+        android:inputType="datetime"
         />
 
   </com.google.android.material.textfield.TextInputLayout>
@@ -75,12 +83,14 @@
       android:layout_height="wrap_content">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/truck_loading_submit_btn"
+        android:id="@+id/truck_unloading_submit_btn"
         style="@style/Widget.Shrine.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
         android:text="@string/truck_loading_btn_text" />
   </RelativeLayout>
 

@@ -37,8 +37,8 @@ public class LoginFragment extends Fragment {
         final TextInputLayout passwordTextInput = view.findViewById(R.id.password_text_input);
         final TextInputEditText email = view.findViewById(R.id.username_edit_text);
         final TextInputEditText password = view.findViewById(R.id.password_edit_text);
-        email.setText("admin@admin.com");
-        password.setText("password");
+//        email.setText("admin@admin.com");
+//        password.setText("password");
         MaterialButton nextButton = view.findViewById(R.id.next_button);
         mAuth=FirebaseAuth.getInstance();;
         // Set an error if the password is less than 8 characters.

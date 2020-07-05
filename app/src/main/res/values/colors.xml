@@ -26,5 +26,6 @@
 
   <color name="textColorPrimary">#442C2E</color>
   <color name="textInputOutlineColor">#FBB8AC</color>
+  <color name="suffixColor">#E91E63</color>
 
 </resources>
