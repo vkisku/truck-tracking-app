@@ -37,9 +37,9 @@ import com.google.firebase.ml.md.R;
 public class MainActivity extends AppCompatActivity{
 
   private enum DetectionMode {
-    ODT_LIVE(R.string.truck_registration, R.string.truck_registration_subtitle),
-    ODT_STATIC(R.string.truck_in, R.string.truck_in_subtitle),
-      ODT_TRUCK_EXIT(R.string.truck_exit, R.string.truck_exit_subtitle),
+    TRUCK_REGISTRATION(R.string.truck_registration, R.string.truck_registration_subtitle),
+    TRUCK_LOADING(R.string.truck_in, R.string.truck_in_subtitle),
+      TRUCK_UNLOADING(R.string.truck_exit, R.string.truck_exit_subtitle),
     BARCODE_LIVE(R.string.mode_barcode_live_title, R.string.mode_barcode_live_subtitle);
 
     private final int titleResId;
@@ -129,15 +129,15 @@ public class MainActivity extends AppCompatActivity{
             view -> {
               Activity activity = MainActivity.this;
               switch (detectionMode) {
-                case ODT_LIVE:
+                  case TRUCK_REGISTRATION:
                     Snackbar.make(getWindow().getDecorView(), "Truck Registration", Snackbar.LENGTH_LONG).show();
                   activity.startActivity(new Intent(activity, TruckRegistration.class));
                   break;
-                case ODT_STATIC:
+                  case TRUCK_LOADING:
                     Snackbar.make(getWindow().getDecorView(), "Truck Loading", Snackbar.LENGTH_LONG).show();
                   //Utils.openImagePicker(activity);
                   break;
-                  case ODT_TRUCK_EXIT:
+                  case TRUCK_UNLOADING:
                       Snackbar.make(getWindow().getDecorView(), "Truck UnLoading", Snackbar.LENGTH_LONG).show();
                       break;
                   case BARCODE_LIVE:

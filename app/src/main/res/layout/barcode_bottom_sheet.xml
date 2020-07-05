@@ -17,22 +17,22 @@
       android:layout_height="wrap_content">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/truck_loading_btn"
+        android:id="@+id/truck_unloading_btn"
         style="@style/Widget.Shrine.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:text="@string/truck_loading" />
+        android:text="@string/truck_unloading" />
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/truck_unloading_btn"
+        android:id="@+id/truck_loading_btn"
         style="@style/Widget.Shrine.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:layout_toStartOf="@id/truck_loading_btn"
         android:layout_toLeftOf="@id/truck_loading_btn"
-        android:text="@string/truck_unloading" />
+        android:text="@string/truck_loading" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/cancel_button"

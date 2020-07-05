@@ -23,7 +23,7 @@ import com.google.firebase.ml.md.R;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-public class TruckLoading extends AppCompatActivity{
+public class TruckUnLoading extends AppCompatActivity{
     private String StruckNo,StruckDriverName;
     private TextInputEditText truckNo,truckDriverName,datetimepicker;
     FirebaseFirestore db;

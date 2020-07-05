@@ -33,6 +33,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.ml.md.R;
 import com.vikash.truck.tracking.TruckLoading;
+import com.vikash.truck.tracking.TruckUnLoading;
 import com.vikash.truck.tracking.camera.WorkflowModel;
 import com.vikash.truck.tracking.camera.WorkflowModel.WorkflowState;
 import java.util.ArrayList;
@@ -95,6 +96,18 @@ public class BarcodeResultFragment extends BottomSheetDialogFragment {
         }
     });
     unloading=view.findViewById(R.id.truck_unloading_btn);
+      unloading.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              // Sets as disabled to prevent the user from clicking on it too fast.
+              Intent intent = new Intent(getActivity(), TruckUnLoading.class);
+              String barcode=barcodeFieldList.get(0).value;
+              Log.e("BAR CODE",barcodeFieldList.get(0).value);
+              intent.putExtra("truckNo", barcode);
+              intent.putExtra("truckDriverName", "Hello World");
+              startActivity(intent);
+          }
+      });
 
     cancel=view.findViewById(R.id.cancel_button);
 

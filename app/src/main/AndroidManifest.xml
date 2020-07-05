@@ -60,12 +60,17 @@
         android:theme="@style/Theme.AppCompat.Light">
     </activity>
     <activity
+        android:name="com.vikash.truck.tracking.TruckRegistration"
+        android:exported="false"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
         android:name="com.vikash.truck.tracking.TruckLoading"
         android:exported="false"
         android:screenOrientation="portrait">
     </activity>
     <activity
-        android:name="com.vikash.truck.tracking.TruckRegistration"
+        android:name="com.vikash.truck.tracking.TruckUnLoading"
         android:exported="false"
         android:screenOrientation="portrait">
     </activity>

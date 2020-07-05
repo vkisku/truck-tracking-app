@@ -85,4 +85,8 @@
     <string name="truck_no_hint">Truck Number</string>
   <string name="truck_driver_name_hint">Truck Driver Name</string>
     <string name="truck_register_text">Register</string>
+    <string name="truck_loading_btn_text">Submit</string>
+  <string name="truck_date_hint">Date Time</string>
+  <string name="truck_laden_weight_hint">Laden Weight</string>
+  <string name="truck_empty_weight_hint">Empty Weight</string>
 </resources>
